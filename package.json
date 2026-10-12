@@ -1,0 +1,50 @@
+{
+  "name": "@gang-of-beads/pi-web-workflows",
+  "version": "0.1.0",
+  "description": "PI WEB plugin that draws the pi-dynamic-workflows `workflow` tool as a live progress card.",
+  "license": "MIT",
+  "type": "module",
+  "keywords": [
+    "pi-package",
+    "pi-web",
+    "pi-web-plugin",
+    "pi-dynamic-workflows"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gang-of-Beads/pi-web-workflows.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Gang-of-Beads/pi-web-workflows/issues"
+  },
+  "homepage": "https://github.com/Gang-of-Beads/pi-web-workflows#readme",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "piWeb": {
+    "plugins": [
+      {
+        "id": "workflows",
+        "browserRoot": "dist",
+        "module": "dist/pi-web-plugin.js"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && npm run build && git diff --exit-code -- dist"
+  },
+  "devDependencies": {
+    "@gang-of-beads/pi-web": "^2.202610.4",
+    "esbuild": "^0.28.2",
+    "lit": "^3.3.3",
+    "typescript": "^6.0.3"
+  }
+}
