@@ -12,15 +12,17 @@ While a workflow runs, the card shows each phase with its agents and their state
 ## Install
 
 ```sh
-pi install git:github.com/Gang-of-Beads/pi-web-workflows
+pi install npm:@gang-of-beads/pi-web-workflows
 ```
+
+To follow `main` instead of releases, install `git:github.com/Gang-of-Beads/pi-web-workflows`.
 
 Then reload the PI WEB tab. The plugin has no server part, so the session daemon does not need a restart.
 
 To remove it:
 
 ```sh
-pi remove git:github.com/Gang-of-Beads/pi-web-workflows
+pi remove npm:@gang-of-beads/pi-web-workflows
 ```
 
 ## How it works
@@ -49,6 +51,10 @@ See [PI WEB's plugin documentation](https://github.com/Gang-of-Beads/pi-web/blob
 ## Contributing
 
 Issues and pull requests are welcome. Please keep changes small and focused, run `npm run check` before opening a pull request, and describe what you changed and how you checked it in a running PI WEB.
+
+## Releasing
+
+Update `version` in `package.json` and `package-lock.json`, give `CHANGELOG.md` a section for it, commit, and push a matching `v<version>` tag. The release workflow checks the package, publishes it to npm, and creates the GitHub Release from that CHANGELOG section.
 
 ## License
 
