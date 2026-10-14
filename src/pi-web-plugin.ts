@@ -1,4 +1,4 @@
-import type { PiWebPlugin } from "@gang-of-beads/pi-web/plugin-api";
+import type { PiWebPlugin } from "@gang-of-beads/pi-web-plugin-api/plugin-api";
 import { defineWorkflowCard } from "./workflowCardElement.js";
 import { workflowProgress } from "./workflowProgress.js";
 
