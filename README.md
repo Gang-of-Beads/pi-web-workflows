@@ -9,6 +9,8 @@ While a workflow runs, the card shows each phase with its agents and their state
 - PI WEB 2.202610.5 or later. Earlier releases bundle their own copy of this plugin, which wins over an installed one (Settings → PI WEB plugins reports the duplicate id).
 - The pi-dynamic-workflows extension installed in pi, so sessions have the `workflow` tool.
 
+On pi 1.x, pi-dynamic-workflows starts its workflow agents with only the models pi itself knows about (`auth.json`, `models.json` and pi's built-in providers). Providers that another extension registers, such as pi-multi-account pools, are not available to those agents until pi-dynamic-workflows supports pi 1.x model runtimes.
+
 ## Install
 
 ```sh
