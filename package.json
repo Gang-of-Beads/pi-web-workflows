@@ -1,6 +1,6 @@
 {
   "name": "@gang-of-beads/pi-web-workflows",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "PI WEB plugin that draws the pi-dynamic-workflows `workflow` tool as a live progress card.",
   "license": "MIT",
   "type": "module",
