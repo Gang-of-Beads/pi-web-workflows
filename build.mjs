@@ -7,7 +7,7 @@ import * as esbuild from "esbuild";
  */
 await rm("dist", { recursive: true, force: true });
 await esbuild.build({
-  entryPoints: ["src/pi-web-plugin.ts"],
+  banner: { js: "/*! Bundles Lit, BSD-3-Clause: see THIRD_PARTY_NOTICES.md */" }, entryPoints: ["src/pi-web-plugin.ts"],
   outfile: "dist/pi-web-plugin.js",
   bundle: true,
   format: "esm",
