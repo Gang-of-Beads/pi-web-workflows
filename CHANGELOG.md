@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.2
+
+- Require plugin API alpha.10.
+- Ship the BSD-3 notice for the Lit the browser bundle inlines.
+
 ## 0.1.1
 
 - The README says that on pi 1.x, the workflow agents pi-dynamic-workflows starts see only the models pi itself knows about (`auth.json`, `models.json` and pi's built-in providers); providers another extension registers, such as pi-multi-account pools, are not available to them until pi-dynamic-workflows supports pi 1.x model runtimes.
